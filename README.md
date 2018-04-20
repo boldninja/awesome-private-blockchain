@@ -23,7 +23,7 @@ Further securisation might be needed if you don't want to maintain a whitelist. 
 
 ## How can I remove a transaction if I have made an error?
 In case of an error, blockchain is not the best to remove transactions since it needs some more complex management, but there are several techniques to achieve this:
-- Mintain a list of exceptions you need to sign with your master key. These exceptions are basically a pair of `block id`/`block signature` where the transaction is removed with the new valid block signature. This list is maintained by your master node to be accessed by all nodes to keep consensus.
+- Maintain a list of exceptions you need to sign with your master key. These exceptions are basically a pair of `block id`/`block signature` where the transaction is removed with the new valid block signature. This list is maintained by your master node to be accessed by all nodes to keep consensus.
 - Rebuild the blockchain from the invalid block. This is a bit more complex but have the advantage of leaving no trace. Basically you reuse all subsequent transactions and reinclude thhem in the new created blocks you sign with your master key.
 
 
